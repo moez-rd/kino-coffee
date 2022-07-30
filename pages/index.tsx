@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
       <main className="px-4 py-8">
         <div>
-          <h1 className="font-bold text-center text-xl tracking-[0.5rem]">MENU LIST</h1>
+          <h1 className="text-center text-xl font-bold tracking-[0.5rem]">MENU LIST</h1>
           <Menu title="Signature Drink" type="ICED/HOT">
             <MenuItem name="Kopi Susu" price="20K" best />
             <MenuItem name="Mango" price="24K" />

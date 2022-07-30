@@ -9,7 +9,7 @@ interface Props {
 
 const MenuItem: FC<Props> = ({ name, price, best = false }) => {
   return (
-    <li className="flex justify-between items-baseline text-lg py-2">
+    <li className="flex items-baseline justify-between py-2 text-lg">
       <p className="flex">
         {name} {best && <Kino className="w-5 translate-x-1" />}
       </p>
