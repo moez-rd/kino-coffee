@@ -6,9 +6,11 @@ import { Fragment } from 'react';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
+      <div className="flex min-h-screen flex-col">
+        <Navbar />
+        <Component {...pageProps} />
+        <Footer className="mt-auto" />
+      </div>
     </Fragment>
   );
 }

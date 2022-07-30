@@ -1,9 +1,18 @@
 import { FC } from 'react';
 import Kino from '@/assets/svg/kino.svg';
+import cn from 'clsx';
 
-const Footer: FC = () => {
+interface Props {
+  className?: string;
+}
+
+const Footer: FC<Props> = ({ className }) => {
   return (
-    <footer className="mt-20 flex flex-col border-b border-primary-300 bg-primary-800 px-4 pt-8 pb-4 text-sm text-primary-100 sm:px-10 md:px-14 xl:px-40 xl:pt-14 2xl:px-80">
+    <footer
+      className={cn(
+        'mt-20 flex flex-col border-primary-300 bg-primary-800 px-4 pt-8 pb-4 text-sm text-primary-100 sm:px-10 md:px-14 xl:px-40 xl:pt-14 2xl:px-80',
+        className
+      )}>
       <div className="grid grid-cols-1 content-start gap-y-8 xl:grid-cols-2">
         <div>
           <div className="flex items-center">
@@ -39,18 +48,18 @@ const Footer: FC = () => {
           <div className="space-y-4">
             <div className="space-y-2">
               <p className="font-bold tracking-[0.5rem] text-primary-400">CALL</p>
-              <p className="-translate-y-2 tracking-[0.1rem]">08127425xxxx</p>
+              <p className="-translate-y-2 tracking-wider">08127425xxxx</p>
             </div>
             <div className="space-y-2">
               <p className="font-bold tracking-[0.5rem] text-primary-400">EMAIL</p>
-              <p className="-translate-y-2 tracking-[0.1rem]">kinoxxx@gmail.com</p>
+              <p className="-translate-y-2 tracking-wider">kinoxxx@gmail.com</p>
             </div>
             <div className="space-y-2">
               <p className="font-bold tracking-[0.5rem] text-primary-400">OPERATION HOURS</p>
-              <p className="-translate-y-2 tracking-[0.1rem]">
+              <p className="-translate-y-2 tracking-wider">
                 SAT—THU <i className="bi bi-dot"></i> 10AM—9PM
               </p>
-              <p className="-translate-y-4 tracking-[0.1rem]">
+              <p className="-translate-y-4 tracking-wider">
                 FRI <i className="bi bi-dot"></i> 1PM—9PM
               </p>
             </div>
