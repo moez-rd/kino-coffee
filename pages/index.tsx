@@ -34,10 +34,10 @@ const Home: NextPage = () => {
 
       <main id="menu">
         <section className="relative overflow-hidden py-12 px-4 sm:px-10 md:px-14 xl:px-40 2xl:px-80">
-          <p className="max-w-2xl text-center font-libre-baskerville text-4xl font-semibold text-primary-300 lg:text-left lg:text-7xl">
+          <p className="max-w-2xl text-center font-libre-baskerville text-4xl text-primary-300 lg:text-left lg:text-7xl">
             Freshly grind{' '}
-            <span className="relative inline-block text-primary-700">
-              coffee <Underline className="absolute -bottom-1 -z-10 w-16 fill-primary-700" />
+            <span className="relative inline-block font-bold text-primary-700">
+              coffee <Underline className="absolute -bottom-1 w-16 fill-primary-500" />
             </span>{' '}
             to start your day. With hight quality ingredients. Perfection.
           </p>
