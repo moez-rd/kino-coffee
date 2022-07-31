@@ -36,23 +36,32 @@ const Footer: FC<Props> = ({ className }) => {
               </a>
             </li>
             <li>
-              TOKOPEDIA<i className="bi bi-box-arrow-up-right text-primary-500"></i>
+              <a href="https://www.tokopedia.com/kinocoffee" target="_blank" rel="noreferrer">
+                TOKOPEDIA<i className="bi bi-box-arrow-up-right text-primary-500"></i>
+              </a>
             </li>
             <li>
-              GOFOOD<i className="bi bi-box-arrow-up-right text-primary-500"></i>
+              <a href="https://gofood.link/a/Bo3tDyh" target="_blank" rel="noreferrer">
+                GOFOOD<i className="bi bi-box-arrow-up-right text-primary-500"></i>
+              </a>
             </li>
             <li>
-              GRABFOOD<i className="bi bi-box-arrow-up-right text-primary-500"></i>
+              <a
+                href="https://grab.onelink.me/2695613898?pid=inappsharing&c=6-C23GRXBFRP6TR2&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABFOOD%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D6-C23GRXBFRP6TR2&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com"
+                target="_blank"
+                rel="noreferrer">
+                GRABFOOD<i className="bi bi-box-arrow-up-right text-primary-500"></i>
+              </a>
             </li>
           </ul>
           <div className="space-y-4">
             <div className="space-y-2">
               <p className="font-bold tracking-[0.5rem] text-primary-400">CALL</p>
-              <p className="-translate-y-2 tracking-wider">08127425xxxx</p>
+              <p className="-translate-y-2 tracking-wider">081316015503</p>
             </div>
             <div className="space-y-2">
               <p className="font-bold tracking-[0.5rem] text-primary-400">EMAIL</p>
-              <p className="-translate-y-2 tracking-wider">kinoxxx@gmail.com</p>
+              <p className="-translate-y-2 tracking-wider">hello.kinocoffee@gmail.com</p>
             </div>
             <div className="space-y-2">
               <p className="font-bold tracking-[0.5rem] text-primary-400">OPERATION HOURS</p>
