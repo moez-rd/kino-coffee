@@ -10,5 +10,5 @@
 @tailwind utilities;
 
 body {
-  @apply bg-primary-200 font-roboto;
+  @apply bg-gray-200 font-roboto text-primary-800;
 }

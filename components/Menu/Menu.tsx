@@ -10,7 +10,7 @@ const Menu: FC<Props> = ({ children, title, type }) => {
   return (
     <div className="pt-10">
       <div className="flex items-baseline justify-between">
-        <h2 className="font-trocchi text-3xl">{title}</h2>
+        <h2 className="font-trocchi text-2xl">{title}</h2>
         <p className="font-libre-baskerville text-xs">{type}</p>
       </div>
       <ul className="flex flex-col space-y-4 pt-4 font-montserrat">{children}</ul>
