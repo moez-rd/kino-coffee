@@ -11,7 +11,9 @@ module.exports = {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
         trocchi: ['Trocchi', 'serif'],
-        'libre-baskerville': ['Libre Baskerville', 'serif']
+        'libre-baskerville': ['Libre Baskerville', 'serif'],
+        montserrat: ['Montserrat', 'sans-serif']
+
       }
     }
   },
