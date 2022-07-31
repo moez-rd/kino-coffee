@@ -2,6 +2,9 @@ import type { NextPage } from 'next';
 import { Menu, MenuItem } from '@/components/index';
 import Head from 'next/head';
 import { Fragment } from 'react';
+import Divider from '@/assets/svg/divider.svg';
+import Kino from '@/assets/svg/kino.svg';
+import Image from 'next/image';
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +15,20 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="px-4 py-8 sm:px-10 md:px-14 xl:px-40 2xl:px-80">
+      <header className="relative flex h-[200px] w-full flex-col items-center overflow-hidden py-8 tracking-[0.5rem] sm:h-[600px] sm:py-40 sm:py-40">
+        <Image
+          src="/coffee.jpg"
+          alt=""
+          layout="fill"
+          objectFit="cover"
+          className="absolute top-0 -z-10 w-full"
+        />
+        <Divider className="absolute bottom-0 fill-primary-200" />
+        <Kino className="h-10 fill-primary-200 sm:h-20" />
+        <h1 className="mt-4 text-2xl font-bold text-primary-100 sm:text-4xl">KINO COFFEE</h1>
+      </header>
+
+      <main id="menu" className="px-4 py-8 sm:px-10 md:px-14 xl:px-40 2xl:px-80">
         <div>
           <h1 className="text-center text-xl font-bold tracking-[0.5rem]">MENU LIST</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-14">
