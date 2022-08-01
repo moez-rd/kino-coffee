@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import Kino from '@/assets/svg/kino.svg';
 import cn from 'clsx';
+import Divider from '@/assets/svg/divider.svg';
 
 interface Props {
   className?: string;
@@ -10,14 +11,15 @@ const Footer: FC<Props> = ({ className }) => {
   return (
     <footer
       className={cn(
-        'mt-20 flex flex-col bg-gray-900 px-4 pt-8 pb-4 text-sm text-gray-100 sm:px-10 md:px-14 xl:px-40 xl:pt-14 2xl:px-80',
+        'relative flex flex-col bg-gray-900 px-4 pt-20 pb-4 text-sm text-gray-100 sm:px-10 sm:pt-24 md:px-14 md:pt-28 lg:pt-40 xl:px-40 2xl:px-80 2xl:pt-56',
         className
       )}>
+      <Divider className="absolute inset-x-0 -top-5 rotate-180 fill-gray-200" />
       <div className="grid grid-cols-1 content-start gap-y-8 xl:grid-cols-2">
         <div>
           <div className="flex items-center">
             <Kino className="w-4 fill-gray-100 lg:w-6" />
-            <p className="pl-2 text-xs font-bold tracking-[0.2rem] lg:text-base">KINO</p>
+            <p className="translate-y-0.5 pl-2 font-medium tracking-[0.2rem] lg:text-xl">kino</p>
           </div>
           <div>
             <p className="mt-2 max-w-md text-xs tracking-wider xl:text-sm">
@@ -76,7 +78,7 @@ const Footer: FC<Props> = ({ className }) => {
         </div>
       </div>
       <div className="mt-10 text-center">
-        <p className="text-xs text-gray-600">&copy; Copyright 2022 Kino Coffee</p>
+        <p className="text-sm text-gray-600">&copy; Copyright 2022 Kino Coffee</p>
       </div>
     </footer>
   );

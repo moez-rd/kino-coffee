@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Diodrum Rounded';
+    src: url('DiodrumRounded-Regular.woff2') format('woff2'),
+        url('DiodrumRounded-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Diodrum Rounded';
+    src: url('DiodrumRounded-Semibold.woff2') format('woff2'),
+        url('DiodrumRounded-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Diodrum Rounded';
+    src: url('DiodrumRounded-RegularItalic.woff2') format('woff2'),
+        url('DiodrumRounded-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Diodrum Rounded';
+    src: url('DiodrumRounded-SemiboldItalic.woff2') format('woff2'),
+        url('DiodrumRounded-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Diodrum Rounded';
+    src: url('DiodrumRounded-Medium.woff2') format('woff2'),
+        url('DiodrumRounded-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Diodrum Rounded';
+    src: url('DiodrumRounded-MediumItalic.woff2') format('woff2'),
+        url('DiodrumRounded-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Diodrum Rounded';
+    src: url('DiodrumRounded-LightItalic.woff2') format('woff2'),
+        url('DiodrumRounded-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Diodrum Rounded';
+    src: url('DiodrumRounded-Light.woff2') format('woff2'),
+        url('DiodrumRounded-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Diodrum Rounded';
+    src: url('DiodrumRounded-ExtralightIta.woff2') format('woff2'),
+        url('DiodrumRounded-ExtralightIta.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Diodrum Rounded';
+    src: url('DiodrumRounded-Extralight.woff2') format('woff2'),
+        url('DiodrumRounded-Extralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Diodrum Rounded';
+    src: url('DiodrumRounded-Bold.woff2') format('woff2'),
+        url('DiodrumRounded-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Diodrum Rounded';
+    src: url('DiodrumRounded-BoldItalic.woff2') format('woff2'),
+        url('DiodrumRounded-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+

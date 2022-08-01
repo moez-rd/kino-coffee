@@ -23,7 +23,8 @@ module.exports = {
         roboto: ['Roboto', 'sans-serif'],
         trocchi: ['Trocchi', 'serif'],
         'libre-baskerville': ['Libre Baskerville', 'serif'],
-        montserrat: ['Montserrat', 'sans-serif']
+        montserrat: ['Montserrat', 'sans-serif'],
+        'diodrum-rounded': ['Diodrum Rounded', 'sans-serif']
       }
     }
   },
