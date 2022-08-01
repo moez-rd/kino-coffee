@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     <Fragment>
       <Head>
         <title>Kino Coffee</title>
-        <meta name="description" content="Kino Coffee - Palembang" />
+        <meta name="description" content="Freshly grind coffee to start your day. With hight quality ingredients. Perfection." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
