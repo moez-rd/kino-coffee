@@ -5,6 +5,8 @@ import { Fragment } from 'react';
 import Divider from '@/assets/svg/divider.svg';
 import Kino from '@/assets/svg/kino.svg';
 import Underline from '@/assets/svg/underline.svg';
+import Coffee from '@/assets/svg/coffee.svg';
+import CoffeeBeans from '@/assets/svg/coffee-beans.svg';
 import Image from 'next/image';
 
 const Home: NextPage = () => {
@@ -12,7 +14,10 @@ const Home: NextPage = () => {
     <Fragment>
       <Head>
         <title>Kino Coffee</title>
-        <meta name="description" content="Kino Coffee - Palembang" />
+        <meta
+          name="description"
+          content="Freshly grind coffee to start your day. With hight quality ingredients. Perfection."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -26,20 +31,23 @@ const Home: NextPage = () => {
           objectFit="cover"
           className="absolute top-0 -z-10 w-full brightness-50"
         />
-        <Divider className="absolute bottom-0 fill-gray-200" />
+        <Divider className="absolute -bottom-5 fill-gray-200" />
         {/* <Kino className="h-16 fill-gray-200 sm:h-20" /> */}
-        <h1 className="mx-auto mt-4 max-w-xl px-4 text-2xl font-bold uppercase text-gray-100 sm:text-4xl md:text-5xl xl:max-w-2xl">
+        <CoffeeBeans className="mx-auto w-7 fill-gray-100 md:w-14" />
+        <h1 className="mx-auto mt-4 max-w-xl px-4 text-2xl font-bold uppercase text-gray-100 sm:text-4xl md:max-w-2xl md:text-5xl">
           Looking for Perfectly Coffee?
         </h1>
         <p className="text-gray-100 sm:text-xl md:text-2xl">We got you!</p>
       </header>
 
       <main id="menu" className="py-20">
-        <section className="relative overflow-hidden py-20 px-4 text-center sm:px-10 md:px-14 xl:px-40 2xl:px-80">
-          <p className="mx-auto max-w-xl font-libre-baskerville text-4xl text-primary-300 lg:mx-0 lg:max-w-2xl lg:text-left lg:text-5xl">
+        <section className="relative overflow-hidden py-20 px-4 text-center sm:px-10 md:px-14 lg:text-left xl:px-40 2xl:px-80">
+          <Coffee className="mx-auto mb-4 w-10 fill-primary-700 lg:mx-0 lg:ml-2 lg:w-20" />
+          <p className="mx-auto max-w-xl font-libre-baskerville text-4xl text-primary-300 lg:mx-0 lg:max-w-2xl lg:text-5xl">
             Freshly grind{' '}
             <span className="relative inline-block font-bold text-primary-700">
-              coffee <Underline className="absolute -bottom-1 w-16 fill-primary-500" />
+              coffee{' '}
+              <Underline className="absolute bottom-0 -z-10 w-full fill-primary-400 lg:-bottom-1" />
             </span>{' '}
             to start your day. With hight quality ingredients. Perfection.
           </p>
