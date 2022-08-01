@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Kino from './kino.svg';
+import Kino from '@/assets/svg/kino.svg';
 
 const Navbar: FC = () => {
   return (

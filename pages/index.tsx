@@ -7,6 +7,7 @@ import Kino from '@/assets/svg/kino.svg';
 import Underline from '@/assets/svg/underline.svg';
 import Coffee from '@/assets/svg/coffee.svg';
 import CoffeeBeans from '@/assets/svg/coffee-beans.svg';
+import CoffeePowder from '@/assets/svg/coffee-powder.svg';
 import Image from 'next/image';
 
 const Home: NextPage = () => {
@@ -54,7 +55,45 @@ const Home: NextPage = () => {
           <Kino className="absolute inset-y-0 -right-24 -z-10 my-auto h-52 fill-primary-600/5 lg:h-full" />
         </section>
         <section className="px-4 py-20 sm:px-10 md:px-14 xl:px-40 2xl:px-80">
-          <h2 className="text-center text-xl font-bold tracking-[0.5rem]">MENU LIST</h2>
+          <div className="relative flex flex-col items-center bg-primary-300 px-10 py-16 text-center font-montserrat text-xl font-medium text-primary-600 sm:px-14 md:py-20 lg:items-end lg:text-right xl:flex-row xl:items-center xl:justify-end">
+            <CoffeePowder className="mb-4 h-10 fill-primary-700 lg:h-20 xl:absolute xl:left-20 xl:h-36 2xl:w-40" />
+            <div className="max-w-2xl space-y-4 xl:max-w-lg 2xl:max-w-2xl">
+              <p>
+                Discover deliciousness at <span className="font-black">Kino Coffee</span>. Imagine
+                drinking a good cup of coffee that&apos;s made with love and handled with care.
+              </p>
+              <p>
+                Don&apos;t have to worry because our coffee shop use a high quality of coffee beans
+                and serve it with a perfectly ingredient.
+              </p>
+              <p>Now that&apos;s perfection.</p>
+            </div>
+            <div>
+              <p className="hidden -rotate-90 text-xs tracking-widest text-primary-400 xl:block">
+                PERFECTION
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="px-4 py-20 sm:px-10 md:px-14 xl:px-40 2xl:px-80">
+          <h2 className="text-center text-xl font-bold tracking-[0.5rem]">WHAT YOU&apos;LL LOVE</h2>
+          <ul className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
+            <li className="bg-primary-300 py-4 px-20 text-center md:py-8">
+              <h3 className="font-bold">COFFEE</h3>
+              <p>Heavenly coffee will make your day better.</p>
+            </li>
+            <li className="bg-primary-300 py-4 px-20 text-center md:py-8">
+              <h3 className="font-bold">NON-COFFEE</h3>
+              <p>The sweetness gonna recharge your energy.</p>
+            </li>
+            <li className="bg-primary-300 py-4 px-20 text-center md:py-8">
+              <h3 className="font-bold">MOCKTAIL</h3>
+              <p>Perfect combination for your perfect choice.</p>
+            </li>
+          </ul>
+        </section>
+        <section className="px-4 py-20 sm:px-10 md:px-14 xl:px-40 2xl:px-80">
+          <h2 className="text-center text-xl font-bold tracking-[0.5rem]">OUR MENU</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-14">
             <Menu title="Signature Drink" type="ICED/HOT">
               <MenuItem name="Kopi Susu" description="Signature drink" price="20" best />
@@ -95,22 +134,11 @@ const Home: NextPage = () => {
               <MenuItem name="Soes" description="Dessert" price="8" />
             </Menu>
             <Menu title="Rice Box">
-              <MenuItem
-                name="Chicken Rice with Matah Chili Sauce"
-                description="Rice box"
-                price="25"
-              />
-              <MenuItem
-                name="Chicken Rice with Geprek Chili Sauce"
-                description="Rice box"
-                price="25"
-              />
-              <MenuItem
-                name="Chicken Rice with Onion Chili Sauce"
-                description="Rice box"
-                price="25"
-              />
-              <MenuItem name="Chicken Rice with Salted Egg" description="Rice box" price="25" />
+              <MenuItem name="Nasi Ayam Sambal Matah" description="Rice box" price="25" />
+              <MenuItem name="Nasi Ayam Sambal Geprek" description="Rice box" price="25" />
+              <MenuItem name="Nasi Ayam Sambal Bawang" description="Rice box" price="25" />
+              <MenuItem name="Nasi Ayam Asam Manis" description="Rice box" price="25" />
+              <MenuItem name="Nasi Ayam Telur Asin" description="Rice box" price="25" />
             </Menu>
             <Menu title="Add-ons">
               <MenuItem name="Extra-shot Espresso" description="Add-ons" price="7" />

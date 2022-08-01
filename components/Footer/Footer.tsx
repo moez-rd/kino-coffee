@@ -18,8 +18,10 @@ const Footer: FC<Props> = ({ className }) => {
       <div className="grid grid-cols-1 content-start gap-y-8 xl:grid-cols-2">
         <div>
           <div className="flex items-center">
-            <Kino className="w-4 fill-gray-100 lg:w-6" />
-            <p className="translate-y-0.5 pl-2 font-medium tracking-[0.2rem] lg:text-xl">kino</p>
+            <Kino className="w-6 fill-gray-100 lg:w-8" />
+            <p className="translate-y-0.5 pl-2 text-lg font-medium tracking-[0.2rem] lg:text-xl">
+              kino
+            </p>
           </div>
           <div>
             <p className="mt-2 max-w-md text-xs tracking-wider xl:text-sm">
