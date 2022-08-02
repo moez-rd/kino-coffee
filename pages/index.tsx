@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Menu, MenuItem } from '@/components/index';
+import { Menu, MenuItem, OpeningHour, OpeningHourItem } from '@/components/index';
 import Head from 'next/head';
 import { Fragment } from 'react';
 import Divider from '@/assets/svg/divider.svg';
@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <div className="absolute top-5 left-5 h-10 w-10 rounded-full bg-black sm:bg-red-500 md:bg-yellow-500 lg:bg-green-500 xl:bg-blue-500 2xl:bg-purple-500"></div> */}
+      <div className="absolute top-5 left-5 h-10 w-10 rounded-full bg-black sm:bg-red-500 md:bg-yellow-500 lg:bg-green-500 xl:bg-blue-500 2xl:bg-purple-500"></div>
 
       <header className="relative flex h-[240px] w-full flex-col overflow-hidden py-8 text-center tracking-[0.5rem] sm:h-[500px] sm:py-40 lg:h-[550px] 2xl:h-[650px]">
         <Image
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
           <Coffee className="mx-auto mb-4 w-10 fill-primary-700 lg:mx-0 lg:ml-2 lg:w-20" />
           <p className="mx-auto max-w-xl font-libre-baskerville text-4xl text-primary-300 lg:mx-0 lg:max-w-2xl lg:text-5xl">
             Freshly grind{' '}
-            <span className="relative inline-block font-bold text-primary-700">
+            <span className="relative inline-block font-diodrum-rounded text-5xl font-bold text-primary-700 lg:text-6xl">
               coffee{' '}
               <Underline className="absolute bottom-0 -z-10 w-full fill-primary-400 lg:-bottom-1" />
             </span>{' '}
@@ -75,23 +75,59 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <section className="px-4 py-20 sm:px-10 md:px-14 xl:px-40 2xl:px-80">
-          <h2 className="text-center text-xl font-bold tracking-[0.5rem]">WHAT YOU&apos;LL LOVE</h2>
-          <ul className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
-            <li className="bg-primary-300 py-4 px-20 text-center md:py-8">
-              <h3 className="font-bold">COFFEE</h3>
-              <p>Heavenly coffee will make your day better.</p>
-            </li>
-            <li className="bg-primary-300 py-4 px-20 text-center md:py-8">
-              <h3 className="font-bold">NON-COFFEE</h3>
-              <p>The sweetness gonna recharge your energy.</p>
-            </li>
-            <li className="bg-primary-300 py-4 px-20 text-center md:py-8">
-              <h3 className="font-bold">MOCKTAIL</h3>
-              <p>Perfect combination for your perfect choice.</p>
-            </li>
-          </ul>
+        <section className="grid grid-cols-1 lg:grid-cols-3">
+          {/* 1 */}
+          <div className="relative px-4 py-20 sm:px-10 md:px-14">
+            <Image
+              src="/kino1.jpg"
+              alt=""
+              layout="fill"
+              objectFit="cover"
+              className="absolute -z-10 brightness-50"
+            />
+            <h2 className="text-center text-xl font-bold tracking-[0.5rem] text-primary-100">
+              WHAT YOU&apos;LL LOVE
+            </h2>
+            <ul className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-1">
+              <li className="bg-primary-300 py-4 px-20 text-center sm:px-4 md:py-8">
+                <h3 className="font-bold">COFFEE</h3>
+                <p>Heavenly coffee will make your day better.</p>
+              </li>
+              <li className="bg-primary-300 py-4 px-20 text-center sm:px-4 md:py-8">
+                <h3 className="font-bold">NON-COFFEE</h3>
+                <p>The sweetness gonna recharge your energy.</p>
+              </li>
+              <li className="bg-primary-300 py-4 px-20 text-center sm:px-4 md:py-8">
+                <h3 className="font-bold">MOCKTAIL</h3>
+                <p>Perfect combination for your perfect choice.</p>
+              </li>
+            </ul>
+          </div>
+          {/* 2 */}
+          <div className="bg-primary-300 px-4 py-20 sm:px-10 md:px-14">
+            <h2 className="text-center text-xl font-bold tracking-[0.5rem]">OPENING HOURS</h2>
+            <OpeningHour>
+              <OpeningHourItem day="Monday" hour="10 AM to 9.30 PM" />
+              <OpeningHourItem day="Tuesday" hour="10 AM to 9.30 PM" />
+              <OpeningHourItem day="Wednesday" hour="10 AM to 9.30 PM" />
+              <OpeningHourItem day="Thusday" hour="10 AM to 9.30 PM" />
+              <OpeningHourItem day="Friday" hour="1 PM to 9.30 PM" />
+              <OpeningHourItem day="Saturday" hour="10 AM to 9.30 PM" />
+              <OpeningHourItem day="Sunday" hour="10 AM to 9.30 PM" />
+            </OpeningHour>
+          </div>
+          {/* 3 */}
+          <div className="relative h-[600px] lg:h-auto">
+            <Image
+              src="/kino2.jpg"
+              alt=""
+              layout="fill"
+              objectFit="cover"
+              className="absolute -z-10 brightness-50"
+            />
+          </div>
         </section>
+
         <section className="px-4 py-20 sm:px-10 md:px-14 xl:px-40 2xl:px-80">
           <h2 className="text-center text-xl font-bold tracking-[0.5rem]">OUR MENU</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-14">
@@ -133,12 +169,10 @@ const Home: NextPage = () => {
               <MenuItem name="Scone" description="Dessert" price="12" />
               <MenuItem name="Soes" description="Dessert" price="8" />
             </Menu>
-            <Menu title="Rice Box">
-              <MenuItem name="Nasi Ayam Sambal Matah" description="Rice box" price="25" />
-              <MenuItem name="Nasi Ayam Sambal Geprek" description="Rice box" price="25" />
-              <MenuItem name="Nasi Ayam Sambal Bawang" description="Rice box" price="25" />
-              <MenuItem name="Nasi Ayam Asam Manis" description="Rice box" price="25" />
-              <MenuItem name="Nasi Ayam Telur Asin" description="Rice box" price="25" />
+            <Menu title="Snack">
+              <MenuItem name="French Fries" description="Snack" price="23" />
+              <MenuItem name="Pangsit Ayam" description="Snack" price="18" />
+              <MenuItem name="Big Platter" description="Snack" price="38" />
             </Menu>
             <Menu title="Add-ons">
               <MenuItem name="Extra-shot Espresso" description="Add-ons" price="7" />
