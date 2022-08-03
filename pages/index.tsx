@@ -9,6 +9,7 @@ import Coffee from '@/assets/svg/coffee.svg';
 import CoffeeBeans from '@/assets/svg/coffee-beans.svg';
 import CoffeePowder from '@/assets/svg/coffee-powder.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="absolute top-5 left-5 h-10 w-10 rounded-full bg-black sm:bg-red-500 md:bg-yellow-500 lg:bg-green-500 xl:bg-blue-500 2xl:bg-purple-500"></div>
+      {/* <div className="absolute top-5 left-5 h-10 w-10 rounded-full bg-black sm:bg-red-500 md:bg-yellow-500 lg:bg-green-500 xl:bg-blue-500 2xl:bg-purple-500"></div> */}
 
       <header className="relative flex h-[240px] w-full flex-col overflow-hidden py-8 text-center tracking-[0.5rem] sm:h-[500px] sm:py-40 lg:h-[550px] 2xl:h-[650px]">
         <Image
@@ -33,7 +34,6 @@ const Home: NextPage = () => {
           className="absolute top-0 -z-10 w-full brightness-50"
         />
         <Divider className="absolute -bottom-5 fill-gray-200" />
-        {/* <Kino className="h-16 fill-gray-200 sm:h-20" /> */}
         <CoffeeBeans className="mx-auto w-7 fill-gray-100 md:w-14" />
         <h1 className="mx-auto mt-4 max-w-xl px-4 text-2xl font-bold uppercase text-gray-100 sm:text-4xl md:max-w-2xl md:text-5xl">
           Looking for Perfectly Coffee?
@@ -44,11 +44,11 @@ const Home: NextPage = () => {
       <main id="menu" className="py-20">
         <section className="relative overflow-hidden py-20 px-4 text-center sm:px-10 md:px-14 lg:text-left xl:px-40 2xl:px-80">
           <Coffee className="mx-auto mb-4 w-10 fill-primary-700 lg:mx-0 lg:ml-2 lg:w-20" />
-          <p className="mx-auto max-w-xl font-libre-baskerville text-4xl text-primary-300 lg:mx-0 lg:max-w-2xl lg:text-5xl">
+          <p className="mx-auto max-w-xl text-5xl text-primary-300 lg:mx-0 lg:max-w-2xl lg:text-6xl">
             Freshly grind{' '}
-            <span className="relative inline-block font-diodrum-rounded text-5xl font-bold text-primary-700 lg:text-6xl">
+            <span className="relative inline-block font-bold text-primary-700">
               coffee{' '}
-              <Underline className="absolute bottom-0 -z-10 w-full fill-primary-400 lg:-bottom-1" />
+              <Underline className="absolute -bottom-1 -z-10 w-24 fill-primary-400 lg:-bottom-1 lg:w-32" />
             </span>{' '}
             to start your day. With hight quality ingredients. Perfection.
           </p>
@@ -83,9 +83,9 @@ const Home: NextPage = () => {
               alt=""
               layout="fill"
               objectFit="cover"
-              className="absolute -z-10 brightness-50"
+              className="absolute -z-10 blur-sm brightness-50"
             />
-            <h2 className="text-center text-xl font-bold tracking-[0.5rem] text-primary-100">
+            <h2 className="text-center text-xl font-bold tracking-[0.5rem] text-primary-50">
               WHAT YOU&apos;LL LOVE
             </h2>
             <ul className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-1">
@@ -104,8 +104,10 @@ const Home: NextPage = () => {
             </ul>
           </div>
           {/* 2 */}
-          <div className="bg-primary-300 px-4 py-20 sm:px-10 md:px-14">
-            <h2 className="text-center text-xl font-bold tracking-[0.5rem]">OPENING HOURS</h2>
+          <div className="bg-primary-700 px-4 py-20 sm:px-10 md:px-14">
+            <h2 className="text-center text-xl font-bold tracking-[0.5rem] text-primary-50">
+              OPENING HOURS
+            </h2>
             <OpeningHour>
               <OpeningHourItem day="Monday" hour="10 AM to 9.30 PM" />
               <OpeningHourItem day="Tuesday" hour="10 AM to 9.30 PM" />
@@ -117,7 +119,7 @@ const Home: NextPage = () => {
             </OpeningHour>
           </div>
           {/* 3 */}
-          <div className="relative h-[600px] lg:h-auto">
+          <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-auto">
             <Image
               src="/kino2.jpg"
               alt=""
@@ -125,18 +127,24 @@ const Home: NextPage = () => {
               objectFit="cover"
               className="absolute -z-10 brightness-50"
             />
+            <div className="absolute bottom-5 left-5 flex items-center">
+              <Kino className="w-6 fill-primary-100 lg:w-8" />
+              <p className="translate-y-0.5 pl-2 text-lg font-medium tracking-[0.2rem] text-primary-100 lg:text-xl">
+                kino
+              </p>
+            </div>
           </div>
         </section>
 
         <section className="px-4 py-20 sm:px-10 md:px-14 xl:px-40 2xl:px-80">
           <h2 className="text-center text-xl font-bold tracking-[0.5rem]">OUR MENU</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-14">
-            <Menu title="Signature Drink" type="ICED/HOT">
+            <Menu id="signature-drink-menu" title="Signature Drink" type="ICED/HOT">
               <MenuItem name="Kopi Susu" description="Signature drink" price="20" best />
               <MenuItem name="Mango" description="Signature drink" price="24" />
               <MenuItem name="Panna Latte" description="Signature drink" price="26" />
             </Menu>
-            <Menu title="Coffee" type="ICED/HOT">
+            <Menu id="coffee-menu" title="Coffee" type="ICED/HOT">
               <MenuItem name="Espresso" description="Coffee" price="12" />
               <MenuItem name="Americano" description="Coffee" price="25" />
               <MenuItem name="Latte" description="Coffee" price="22" />
@@ -146,14 +154,19 @@ const Home: NextPage = () => {
               <MenuItem name="Caramel Latte" description="Coffee" price="25" />
               <MenuItem name="Caramel Macchiato" description="Coffee" price="28" />
             </Menu>
-            <Menu title="Mocktail" type="ICED">
+            <Menu id="mocktail-menu" title="Mocktail" type="ICED">
               <MenuItem name="Tropical Sunrise" description="Mocktail" price="28" />
               <MenuItem name="Blue Lago’on" description="Mocktail" price="28" />
               <MenuItem name="Shake-Shake Espresso" description="Mocktail" price="28" best />
               <MenuItem name="Fruttie Brew" description="Mocktail" price="30" />
               <MenuItem name="Berry Punch" description="Mocktail" price="30" best />
             </Menu>
-            <Menu title="Non-Coffee" type="ICED/HOT">
+            <Menu id="milkshake-menu" title="Milkshake" type="ICED">
+              <MenuItem name="Vanilla Milkshake" description="Milkshake" price="30" />
+              <MenuItem name="Strawberry Milkshake" description="Milkshake" price="30" />
+              <MenuItem name="Caramel Milkshake" description="Milkshake" price="30" />
+            </Menu>
+            <Menu id="non-coffee-menu" title="Non-Coffee" type="ICED/HOT">
               <MenuItem name="Green Tea" description="Non-coffee" price="24" />
               <MenuItem name="Chocolate" description="Non-coffee" price="24" best />
               <MenuItem name="Klepon" description="Non-coffee" price="24" />
@@ -161,7 +174,7 @@ const Home: NextPage = () => {
               <MenuItem name="Speculatte" description="Non-coffee" price="24" />
               <MenuItem name="Charcoal" description="Non-coffee" price="24" />
             </Menu>
-            <Menu title="Dessert">
+            <Menu id="dessert-menu" title="Dessert">
               <MenuItem name="Banoffee Pie" description="Dessert" price="15" best />
               <MenuItem name="Classic Tiramisu" description="Dessert" price="18" />
               <MenuItem name="The OG Cookies" description="Dessert" price="8" best />
@@ -169,12 +182,13 @@ const Home: NextPage = () => {
               <MenuItem name="Scone" description="Dessert" price="12" />
               <MenuItem name="Soes" description="Dessert" price="8" />
             </Menu>
-            <Menu title="Snack">
+            <Menu id="snack-menu" title="Snack">
               <MenuItem name="French Fries" description="Snack" price="23" />
               <MenuItem name="Pangsit Ayam" description="Snack" price="18" />
               <MenuItem name="Big Platter" description="Snack" price="38" />
+              <MenuItem name="Cireng" description="Snack" price="18" />
             </Menu>
-            <Menu title="Add-ons">
+            <Menu id="add-ons-menu" title="Add-ons">
               <MenuItem name="Extra-shot Espresso" description="Add-ons" price="7" />
               <MenuItem name="Sweet/Salted Macchiato" description="Add-ons" />
               <MenuItem name="Cream" description="Add-ons" price="7" />

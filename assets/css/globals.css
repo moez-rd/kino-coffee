@@ -11,6 +11,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply scroll-smooth scrollbar scrollbar-track-primary-100 scrollbar-thumb-primary-400;
+}
+
 body {
   @apply bg-gray-200 font-diodrum-rounded text-primary-800;
 }
