@@ -136,62 +136,80 @@ const Home: NextPage = () => {
 
         <section id="menu-section" className="px-4 py-20 sm:px-10 md:px-14 xl:px-40 2xl:px-80">
           <h2 className="text-center text-xl font-bold tracking-[0.5rem]">OUR MENU</h2>
+          {/* <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-14"> */}
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-14">
-            <Menu id="signature-drink-menu" title="Signature Drink" type="ICED/HOT">
-              <MenuItem name="Kopi Susu" description="Signature drink" price="20" best />
-              <MenuItem name="Mango" description="Signature drink" price="24" />
-              <MenuItem name="Panna Latte" description="Signature drink" price="26" />
-            </Menu>
-            <Menu id="coffee-menu" title="Coffee" type="ICED/HOT">
-              <MenuItem name="Espresso" description="Coffee" price="12" />
-              <MenuItem name="Americano" description="Coffee" price="25" />
-              <MenuItem name="Latte" description="Coffee" price="22" />
-              <MenuItem name="Cappuccino" description="Coffee" price="22" />
-              <MenuItem name="Vanilla Latte" description="Coffee" price="25" />
-              <MenuItem name="Hazelnut Latte" description="Coffee" price="25" />
-              <MenuItem name="Caramel Latte" description="Coffee" price="25" />
-              <MenuItem name="Caramel Macchiato" description="Coffee" price="28" />
-            </Menu>
-            <Menu id="mocktail-menu" title="Mocktail" type="ICED">
-              <MenuItem name="Tropical Sunrise" description="Mocktail" price="28" />
-              <MenuItem name="Blue Lago’on" description="Mocktail" price="28" />
-              <MenuItem name="Shake-Shake Espresso" description="Mocktail" price="28" best />
-              <MenuItem name="Fruttie Brew" description="Mocktail" price="30" />
-              <MenuItem name="Berry Punch" description="Mocktail" price="30" best />
-            </Menu>
-            <Menu id="milkshake-menu" title="Milkshake" type="ICED">
-              <MenuItem name="Vanilla Milkshake" description="Milkshake" price="30" />
-              <MenuItem name="Strawberry Milkshake" description="Milkshake" price="30" />
-              <MenuItem name="Caramel Milkshake" description="Milkshake" price="30" />
-            </Menu>
-            <Menu id="non-coffee-menu" title="Non-Coffee" type="ICED/HOT">
-              <MenuItem name="Green Tea" description="Non-coffee" price="24" />
-              <MenuItem name="Chocolate" description="Non-coffee" price="24" best />
-              <MenuItem name="Klepon" description="Non-coffee" price="24" />
-              <MenuItem name="Taro" description="Non-coffee" price="24" />
-              <MenuItem name="Speculatte" description="Non-coffee" price="24" />
-              <MenuItem name="Charcoal" description="Non-coffee" price="24" />
-            </Menu>
-            <Menu id="dessert-menu" title="Dessert">
-              <MenuItem name="Banoffee Pie" description="Dessert" price="15" best />
-              <MenuItem name="Classic Tiramisu" description="Dessert" price="18" />
-              <MenuItem name="The OG Cookies" description="Dessert" price="8" best />
-              <MenuItem name="Thick Cookies" description="Dessert" price="25" />
-              <MenuItem name="Scone" description="Dessert" price="12" />
-              <MenuItem name="Soes" description="Dessert" price="8" />
-            </Menu>
-            <Menu id="snack-menu" title="Snack">
-              <MenuItem name="French Fries" description="Snack" price="23" />
-              <MenuItem name="Pangsit Ayam" description="Snack" price="18" />
-              <MenuItem name="Big Platter" description="Snack" price="38" />
-              <MenuItem name="Cireng" description="Snack" price="18" />
-            </Menu>
-            <Menu id="add-ons-menu" title="Add-ons">
-              <MenuItem name="Extra-shot Espresso" description="Add-ons" price="7" />
-              <MenuItem name="Sweet/Salted Macchiato" description="Add-ons" />
-              <MenuItem name="Cream" description="Add-ons" price="7" />
-              <MenuItem name="OatMilk" description="Add-ons" price="15" />
-            </Menu>
+            <div>
+              <Menu id="signature-drink-menu" title="Signature Drink" type="ICED/HOT">
+                <MenuItem name="Kopi Susu" description="Signature drink" price="20" best />
+                <MenuItem name="Mango" description="Signature drink" price="24" />
+                <MenuItem name="Panna Latte" description="Signature drink" price="26" />
+              </Menu>
+              <Menu id="coffee-menu" title="Coffee" type="ICED/HOT">
+                <MenuItem name="Espresso" description="Coffee" price="12" />
+                <MenuItem name="Americano" description="Coffee" price="25" />
+                <MenuItem name="Latte" description="Coffee" price="22" />
+                <MenuItem name="Cappuccino" description="Coffee" price="22" />
+                <MenuItem name="Vanilla Latte" description="Coffee" price="25" />
+                <MenuItem name="Hazelnut Latte" description="Coffee" price="25" />
+                <MenuItem name="Caramel Latte" description="Coffee" price="25" />
+                <MenuItem name="Caramel Macchiato" description="Coffee" price="28" />
+              </Menu>
+              <Menu id="mocktail-menu" title="Mocktail" type="ICED">
+                <MenuItem name="Tropical Sunrise" description="Mocktail" price="28" />
+                <MenuItem name="Blue Lago’on" description="Mocktail" price="28" />
+                <MenuItem name="Shake-Shake Espresso" description="Mocktail" price="28" best />
+                <MenuItem name="Fruttie Brew" description="Mocktail" price="30" />
+                <MenuItem name="Berry Punch" description="Mocktail" price="30" best />
+              </Menu>
+              <Menu id="milkshake-menu" title="Milkshake" type="ICED">
+                <MenuItem name="Vanilla Milkshake" description="Milkshake" price="30" />
+                <MenuItem name="Strawberry Milkshake" description="Milkshake" price="30" />
+                <MenuItem name="Caramel Milkshake" description="Milkshake" price="30" />
+              </Menu>
+              <Menu id="non-coffee-menu" title="Non-Coffee" type="ICED/HOT">
+                <MenuItem name="Green Tea" description="Non-coffee" price="24" />
+                <MenuItem name="Chocolate" description="Non-coffee" price="24" best />
+                <MenuItem name="Klepon" description="Non-coffee" price="24" />
+                <MenuItem name="Taro" description="Non-coffee" price="24" />
+                <MenuItem name="Speculatte" description="Non-coffee" price="24" />
+                <MenuItem name="Charcoal" description="Non-coffee" price="24" />
+              </Menu>
+            </div>
+            <div>
+              <Menu id="tea-menu" title="Tea" type="ICED/HOT">
+                <MenuItem name="Black Tea" description="Tea" price="18" />
+                <MenuItem name="Lemon Tea" description="Tea" price="18" />
+                <MenuItem name="Lychee Tea" description="Tea" price="20" />
+                <MenuItem name="Mango Tea" description="Tea" price="20" />
+                <MenuItem name="Apple Tea" description="Tea" price="20" />
+              </Menu>
+              <Menu id="artisan-tea-menu" title="Artisan Tea" type="ICED/HOT">
+                <MenuItem name="Teman Buku" description="Artisan Tea" price="24" />
+                <MenuItem name="Vanilla Rose" description="Artisan Tea" price="24" />
+                <MenuItem name="Mandarin Chocolate" description="Artisan Tea" price="24" />
+                <MenuItem name="Lemon Mint" description="Artisan Tea" price="24" />
+              </Menu>
+              <Menu id="dessert-menu" title="Dessert">
+                <MenuItem name="Banoffee Pie" description="Dessert" price="15" best />
+                <MenuItem name="Classic Tiramisu" description="Dessert" price="18" />
+                <MenuItem name="The OG Cookies" description="Dessert" price="8" best />
+                <MenuItem name="Thick Cookies" description="Dessert" price="25" />
+                <MenuItem name="Scone" description="Dessert" price="12" />
+                <MenuItem name="Soes" description="Dessert" price="8" />
+              </Menu>
+              <Menu id="snack-menu" title="Snack">
+                <MenuItem name="French Fries" description="Snack" price="23" />
+                <MenuItem name="Pangsit Ayam" description="Snack" price="18" />
+                <MenuItem name="Big Platter" description="Snack" price="38" />
+                <MenuItem name="Cireng" description="Snack" price="18" />
+              </Menu>
+              <Menu id="add-ons-menu" title="Add-ons">
+                <MenuItem name="Extra-shot Espresso" description="Add-ons" price="7" />
+                <MenuItem name="Sweet/Salted Macchiato" description="Add-ons" />
+                <MenuItem name="Cream" description="Add-ons" price="7" />
+                <MenuItem name="OatMilk" description="Add-ons" price="15" />
+              </Menu>
+            </div>
           </div>
         </section>
       </main>
