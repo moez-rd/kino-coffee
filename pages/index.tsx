@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Menu, MenuItem, OpeningHour, OpeningHourItem } from '@/components/index';
+import { Header, Menu, MenuItem, OpeningHour, OpeningHourItem, Section } from '@/components/index';
 import Head from 'next/head';
 import { Fragment } from 'react';
 import Divider from '@/assets/svg/divider.svg';
@@ -9,7 +9,6 @@ import Coffee from '@/assets/svg/coffee.svg';
 import CoffeeBeans from '@/assets/svg/coffee-beans.svg';
 import CoffeePowder from '@/assets/svg/coffee-powder.svg';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
@@ -25,24 +24,12 @@ const Home: NextPage = () => {
 
       {/* <div className="absolute top-5 left-5 h-10 w-10 rounded-full bg-black sm:bg-red-500 md:bg-yellow-500 lg:bg-green-500 xl:bg-blue-500 2xl:bg-purple-500"></div> */}
 
-      <header className="relative flex h-[240px] w-full flex-col items-center overflow-hidden py-8 text-center tracking-[0.5rem] sm:h-[500px] sm:py-40 lg:h-[550px] 2xl:h-[650px]">
-        <Image
-          src="/coffee.jpg"
-          alt=""
-          layout="fill"
-          objectFit="cover"
-          className="absolute top-0 -z-10 w-full brightness-50"
-        />
-        <Divider className="absolute -bottom-5 fill-gray-200" />
-        <CoffeeBeans className="mx-auto w-7 fill-gray-100 md:w-14" />
-        <h1 className="mx-auto mt-4 max-w-xl px-4 text-2xl font-bold uppercase text-gray-100 sm:text-4xl md:max-w-2xl md:text-5xl">
-          Looking for Perfectly Coffee?
-        </h1>
-        <p className="text-gray-100 sm:text-xl md:text-2xl">We got you!</p>
-      </header>
+      <Header />
 
       <main id="menu" className="py-20">
-        <section className="relative overflow-hidden py-20 px-4 text-center sm:px-10 md:px-14 lg:text-left xl:px-40 2xl:px-80">
+        <Section
+          id="description-section"
+          className="relative overflow-hidden  text-center lg:text-left ">
           <Coffee className="mx-auto mb-4 w-10 fill-primary-700 lg:mx-0 lg:ml-2 lg:w-20" />
           <p className="mx-auto max-w-xl text-5xl text-primary-300 lg:mx-0 lg:max-w-2xl lg:text-6xl">
             Freshly grind{' '}
@@ -53,8 +40,8 @@ const Home: NextPage = () => {
             to start your day. With hight quality ingredients. Perfection.
           </p>
           <Kino className="absolute inset-y-0 -right-24 -z-10 my-auto h-52 fill-primary-600/5 lg:h-full" />
-        </section>
-        <section className="px-4 py-20 sm:px-10 md:px-14 xl:px-40 2xl:px-80">
+        </Section>
+        <Section id="grid-section">
           <div className="relative flex flex-col items-center bg-primary-300 px-10 py-16 text-center font-montserrat text-xl font-medium text-primary-600 sm:px-14 md:py-20 lg:items-end lg:text-right xl:flex-row xl:items-center xl:justify-end">
             <CoffeePowder className="mb-4 h-10 fill-primary-700 lg:h-20 xl:absolute xl:left-20 xl:h-36 2xl:w-40" />
             <div className="max-w-2xl space-y-4 xl:max-w-lg 2xl:max-w-2xl">
@@ -74,7 +61,7 @@ const Home: NextPage = () => {
               </p>
             </div>
           </div>
-        </section>
+        </Section>
         <section className="grid grid-cols-1 lg:grid-cols-3">
           {/* 1 */}
           <div className="relative px-4 py-20 sm:px-10 md:px-14">
@@ -134,7 +121,7 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section id="menu-section" className="px-4 py-20 sm:px-10 md:px-14 xl:px-40 2xl:px-80">
+        <Section id="menu-section">
           <h2 className="text-center text-xl font-bold tracking-[0.5rem]">OUR MENU</h2>
           {/* <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-14"> */}
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-14">
@@ -211,7 +198,7 @@ const Home: NextPage = () => {
               </Menu>
             </div>
           </div>
-        </section>
+        </Section>
       </main>
     </Fragment>
   );
