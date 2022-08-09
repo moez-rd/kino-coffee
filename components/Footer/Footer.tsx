@@ -11,7 +11,7 @@ const Footer: FC<Props> = ({ className }) => {
   return (
     <footer
       className={cn(
-        'text-primary-570 relative flex flex-col bg-primary-700 px-4 pt-20 pb-4 text-sm text-primary-50 sm:px-10 sm:pt-24 md:px-14 md:pt-28 lg:pt-40 xl:px-40 2xl:px-80 2xl:pt-56',
+        'text-primary-570 relative flex flex-col bg-primary-900 px-4 pt-20 pb-4 text-sm text-primary-50 sm:px-10 sm:pt-24 md:px-14 md:pt-28 lg:pt-40 xl:px-40 2xl:px-80 2xl:pt-56',
         className
       )}>
       <Divider className="absolute inset-x-0 -top-5 rotate-180 fill-gray-200" />
@@ -32,7 +32,9 @@ const Footer: FC<Props> = ({ className }) => {
         </div>
         <div className="grid grid-cols-1 gap-y-8 md:grid-cols-2 md:gap-x-14">
           <ul className="space-y-2 font-bold tracking-[0.2rem] text-primary-300">
-            <li>MENU</li>
+            <li>
+              <a href="#menu-section">MENU</a>
+            </li>
             <li>ABOUT</li>
             <li>
               <a href="https://www.instagram.com/kinocoffee.id/" target="_blank" rel="noreferrer">

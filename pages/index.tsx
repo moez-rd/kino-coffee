@@ -25,7 +25,7 @@ const Home: NextPage = () => {
 
       {/* <div className="absolute top-5 left-5 h-10 w-10 rounded-full bg-black sm:bg-red-500 md:bg-yellow-500 lg:bg-green-500 xl:bg-blue-500 2xl:bg-purple-500"></div> */}
 
-      <header className="relative flex h-[240px] w-full flex-col overflow-hidden py-8 text-center tracking-[0.5rem] sm:h-[500px] sm:py-40 lg:h-[550px] 2xl:h-[650px]">
+      <header className="relative flex h-[240px] w-full flex-col items-center overflow-hidden py-8 text-center tracking-[0.5rem] sm:h-[500px] sm:py-40 lg:h-[550px] 2xl:h-[650px]">
         <Image
           src="/coffee.jpg"
           alt=""
@@ -83,31 +83,29 @@ const Home: NextPage = () => {
               alt=""
               layout="fill"
               objectFit="cover"
-              className="absolute -z-10 blur-sm brightness-50"
+              className="absolute -z-10 brightness-[0.3]"
             />
             <h2 className="text-center text-xl font-bold tracking-[0.5rem] text-primary-50">
               WHAT YOU&apos;LL LOVE
             </h2>
             <ul className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-1">
-              <li className="bg-primary-300 py-4 px-20 text-center sm:px-4 md:py-8">
-                <h3 className="font-bold">COFFEE</h3>
+              <li className="bg-primary-300/20 py-4 px-20 text-center text-primary-100 backdrop-blur-sm sm:px-4 md:py-8">
+                <h3 className="font-bold text-primary-300">COFFEE</h3>
                 <p>Heavenly coffee will make your day better.</p>
               </li>
-              <li className="bg-primary-300 py-4 px-20 text-center sm:px-4 md:py-8">
-                <h3 className="font-bold">NON-COFFEE</h3>
+              <li className="bg-primary-300/20 py-4 px-20 text-center text-primary-100 backdrop-blur-sm sm:px-4 md:py-8">
+                <h3 className="font-bold text-primary-300">NON-COFFEE</h3>
                 <p>The sweetness gonna recharge your energy.</p>
               </li>
-              <li className="bg-primary-300 py-4 px-20 text-center sm:px-4 md:py-8">
-                <h3 className="font-bold">MOCKTAIL</h3>
+              <li className="bg-primary-300/20 py-4 px-20 text-center text-primary-100 backdrop-blur-sm sm:px-4 md:py-8">
+                <h3 className="font-bold text-primary-300">MOCKTAIL</h3>
                 <p>Perfect combination for your perfect choice.</p>
               </li>
             </ul>
           </div>
           {/* 2 */}
-          <div className="bg-primary-700 px-4 py-20 sm:px-10 md:px-14">
-            <h2 className="text-center text-xl font-bold tracking-[0.5rem] text-primary-50">
-              OPENING HOURS
-            </h2>
+          <div className="bg-primary-300 px-4 py-20 sm:px-10 md:px-14">
+            <h2 className="text-center text-xl font-bold tracking-[0.5rem]">OPENING HOURS</h2>
             <OpeningHour>
               <OpeningHourItem day="Monday" hour="10 AM to 9.30 PM" />
               <OpeningHourItem day="Tuesday" hour="10 AM to 9.30 PM" />
@@ -125,7 +123,7 @@ const Home: NextPage = () => {
               alt=""
               layout="fill"
               objectFit="cover"
-              className="absolute -z-10 brightness-50"
+              className="absolute -z-10 brightness-[0.3]"
             />
             <div className="absolute bottom-5 left-5 flex items-center">
               <Kino className="w-6 fill-primary-100 lg:w-8" />
@@ -136,7 +134,7 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className="px-4 py-20 sm:px-10 md:px-14 xl:px-40 2xl:px-80">
+        <section id="menu-section" className="px-4 py-20 sm:px-10 md:px-14 xl:px-40 2xl:px-80">
           <h2 className="text-center text-xl font-bold tracking-[0.5rem]">OUR MENU</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-14">
             <Menu id="signature-drink-menu" title="Signature Drink" type="ICED/HOT">
