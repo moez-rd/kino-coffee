@@ -2,11 +2,9 @@ import type { NextPage } from 'next';
 import { Header, Menu, MenuItem, OpeningHour, OpeningHourItem, Section } from '@/components/index';
 import Head from 'next/head';
 import { Fragment } from 'react';
-import Divider from '@/assets/svg/divider.svg';
 import Kino from '@/assets/svg/kino.svg';
 import Underline from '@/assets/svg/underline.svg';
 import Coffee from '@/assets/svg/coffee.svg';
-import CoffeeBeans from '@/assets/svg/coffee-beans.svg';
 import CoffeePowder from '@/assets/svg/coffee-powder.svg';
 import Image from 'next/image';
 
@@ -98,7 +96,7 @@ const Home: NextPage = () => {
               <OpeningHourItem day="Tuesday" hour="10 AM to 9.30 PM" />
               <OpeningHourItem day="Wednesday" hour="10 AM to 9.30 PM" />
               <OpeningHourItem day="Thusday" hour="10 AM to 9.30 PM" />
-              <OpeningHourItem day="Friday" hour="1 PM to 9.30 PM" />
+              <OpeningHourItem day="Friday" hour="10 AM to 9.30 PM" />
               <OpeningHourItem day="Saturday" hour="10 AM to 9.30 PM" />
               <OpeningHourItem day="Sunday" hour="10 AM to 9.30 PM" />
             </OpeningHour>
@@ -165,13 +163,13 @@ const Home: NextPage = () => {
             <div>
               <Menu id="tea-menu" title="Tea" type="ICED/HOT">
                 <MenuItem name="Black Tea" description="Tea" price="18" />
-                <MenuItem name="Lemon Tea" description="Tea" price="18" />
+                <MenuItem name="Lemon Tea" description="Tea" price="20" />
                 <MenuItem name="Lychee Tea" description="Tea" price="20" />
                 <MenuItem name="Mango Tea" description="Tea" price="20" />
                 <MenuItem name="Apple Tea" description="Tea" price="20" />
               </Menu>
               <Menu id="artisan-tea-menu" title="Artisan Tea" type="ICED/HOT">
-                <MenuItem name="Teman Buku" description="Artisan Tea" price="24" />
+                <MenuItem name="Chandler" description="Artisan Tea" price="24" />
                 <MenuItem name="Vanilla Rose" description="Artisan Tea" price="24" />
                 <MenuItem name="Mandarin Chocolate" description="Artisan Tea" price="24" />
                 <MenuItem name="Lemon Mint" description="Artisan Tea" price="24" />
@@ -181,14 +179,14 @@ const Home: NextPage = () => {
                 <MenuItem name="Classic Tiramisu" description="Dessert" price="18" />
                 <MenuItem name="The OG Cookies" description="Dessert" price="8" best />
                 <MenuItem name="Thick Cookies" description="Dessert" price="25" />
-                <MenuItem name="Scone" description="Dessert" price="12" />
                 <MenuItem name="Soes" description="Dessert" price="8" />
               </Menu>
               <Menu id="snack-menu" title="Snack">
                 <MenuItem name="French Fries" description="Snack" price="23" />
-                <MenuItem name="Pangsit Ayam" description="Snack" price="18" />
+                <MenuItem name="Chicken Dumpling" description="Snack" price="18" />
                 <MenuItem name="Big Platter" description="Snack" price="38" />
                 <MenuItem name="Cireng" description="Snack" price="18" />
+                <MenuItem name="Scone" description="Snack" price="12" />
               </Menu>
               <Menu id="add-ons-menu" title="Add-ons">
                 <MenuItem name="Extra-shot Espresso" description="Add-ons" price="7" />

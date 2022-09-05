@@ -72,11 +72,11 @@ const Footer: FC<Props> = ({ className }) => {
             <div className="space-y-2">
               <p className="font-bold tracking-[0.2rem] text-primary-300">OPERATION HOURS</p>
               <p className="-translate-y-2 tracking-wider">
-                SAT—THU <i className="bi bi-dot"></i> 10AM to 9PM
+                EVERY DAY <i className="bi bi-dot"></i> 10AM to 9.30PM
               </p>
-              <p className="-translate-y-4 tracking-wider">
+              {/* <p className="-translate-y-4 tracking-wider">
                 FRI <i className="bi bi-dot"></i> 1PM to 9PM
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
