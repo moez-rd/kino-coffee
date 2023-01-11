@@ -1,0 +1,314 @@
+[
+    {
+        "id": "signature-drink-menu",
+        "title": "Signature Drink",
+        "type": "ICED/HOT",
+        "items": [
+            {
+                "name": "Kopi Susu",
+                "description": "Signature drink",
+                "price": 20,
+                "best": true
+            },
+            {
+                "name": "Mango",
+                "description": "Signature drink",
+                "price": 24
+            },
+            {
+                "name": "Panna Latte",
+                "description": "Signature drink",
+                "price": 26
+            }
+        ]
+    },
+    {
+        "id": "coffee-menu",
+        "title": "Coffee",
+        "type": "ICED/HOT",
+        "items": [
+            {
+                "name": "Espresso",
+                "description": "Coffee",
+                "price": 12
+            },
+            {
+                "name": "Americano",
+                "description": "Coffee",
+                "price": 25
+            },
+            {
+                "name": "Latte",
+                "description": "Coffee",
+                "price": 22
+            },
+            {
+                "name": "Cappuccino",
+                "description": "Coffee",
+                "price": 22
+            },
+            {
+                "name": "Vanilla Latte",
+                "description": "Coffee",
+                "price": 25
+            },
+            {
+                "name": "Hazelnut Latte",
+                "description": "Coffee",
+                "price": 25
+            },
+            {
+                "name": "Caramel Latte",
+                "description": "Coffee",
+                "price": 25
+            },
+            {
+                "name": "Caramel Macchiato",
+                "description": "Coffee",
+                "price": 28
+            }
+        ]
+    },
+    {
+        "id": "mocktail-menu",
+        "title": "Mocktail",
+        "type": "ICED",
+        "items": [
+            {
+                "name": "Tropical Sunrise",
+                "description": "Mocktail",
+                "price": 28
+            },
+            {
+                "name": "Blue Lago’on",
+                "description": "Mocktail",
+                "price": 28
+            },
+            {
+                "name": "Shake-Shake Espresso",
+                "description": "Mocktail",
+                "price": 28,
+                "best": true
+            },
+            {
+                "name": "Fruttie Brew",
+                "description": "Mocktail",
+                "price": 30
+            },
+            {
+                "name": "Berry Punch",
+                "description": "Mocktail",
+                "price": 30,
+                "best": true
+            }
+        ]
+    },
+    {
+        "id": "milkshake-menu",
+        "title": "Milkshake",
+        "type": "ICED",
+        "items": [
+            {
+                "name": "Vanilla Milkshake",
+                "description": "Milkshake",
+                "price": 30
+            },
+            {
+                "name": "Strawberry Milkshake",
+                "description": "Milkshake",
+                "price": 30
+            },
+            {
+                "name": "Caramel Milkshake",
+                "description": "Milkshake",
+                "price": 30
+            }
+        ]
+    },
+    {
+        "id": "non-coffee-menu",
+        "title": "Non-Coffee",
+        "type": "ICED/HOT",
+        "items": [
+            {
+                "name": "Green Tea",
+                "description": "Non-coffee",
+                "price": 24
+            },
+            {
+                "name": "Chocolate",
+                "description": "Non-coffee",
+                "price": 24,
+                "best": true
+            },
+            {
+                "name": "Klepon",
+                "description": "Non-coffee",
+                "price": 24
+            },
+            {
+                "name": "Taro",
+                "description": "Non-coffee",
+                "price": 24
+            },
+            {
+                "name": "Speculatte",
+                "description": "Non-coffee",
+                "price": 24
+            },
+            {
+                "name": "Charcoal",
+                "description": "Non-coffee",
+                "price": 24
+            }
+        ]
+    },
+    {
+        "id": "tea-menu",
+        "title": "Tea",
+        "type": "ICED/HOT",
+        "items": [
+            {
+                "name": "Black Tea",
+                "description": "Tea",
+                "price": 18
+            },
+            {
+                "name": "Lemon Tea",
+                "description": "Tea",
+                "price": 20
+            },
+            {
+                "name": "Lychee Tea",
+                "description": "Tea",
+                "price": 20
+            },
+            {
+                "name": "Mango Tea",
+                "description": "Tea",
+                "price": 20
+            },
+            {
+                "name": "Apple Tea",
+                "description": "Tea",
+                "price": 20
+            }
+        ]
+    },
+    {
+        "id": "artisan-tea-menu",
+        "title": "Artisan Tea",
+        "type": "ICED/HOT",
+        "items": [
+            {
+                "name": "Chandler",
+                "description": "Artisan Tea",
+                "price": 24
+            },
+            {
+                "name": "Vanilla Rose",
+                "description": "Artisan Tea",
+                "price": 24
+            },
+            {
+                "name": "Mandarin Chocolate",
+                "description": "Artisan Tea",
+                "price": 24
+            },
+            {
+                "name": "Lemon Mint",
+                "description": "Artisan Tea",
+                "price": 24
+            }
+        ]
+    },
+    {
+        "id": "dessert-menu",
+        "title": "Dessert",
+        "items": [
+            {
+                "name": "Banoffee Pie",
+                "description": "Dessert",
+                "price": 15,
+                "best": true
+            },
+            {
+                "name": "Classic Tiramisu",
+                "description": "Dessert",
+                "price": 18
+            },
+            {
+                "name": "The OG Cookies",
+                "description": "Dessert",
+                "price": 8,
+                "best": true
+            },
+            {
+                "name": "Thick Cookies",
+                "description": "Dessert",
+                "price": 25
+            },
+            {
+                "name": "Soes",
+                "description": "Dessert",
+                "price": 8
+            }
+        ]
+    },
+    {
+        "id": "snack-menu",
+        "title": "Snack",
+        "items": [
+            {
+                "name": "French Fries",
+                "description": "Snack",
+                "price": 23
+            },
+            {
+                "name": "Chicken Dumpling",
+                "description": "Snack",
+                "price": 18
+            },
+            {
+                "name": "Big Platter",
+                "description": "Snack",
+                "price": 38
+            },
+            {
+                "name": "Cireng",
+                "description": "Snack",
+                "price": 18
+            },
+            {
+                "name": "Scone",
+                "description": "Snack",
+                "price": 12
+            }
+        ]
+    },
+    {
+        "id": "add-ons-menu",
+        "title": "Add-ons",
+        "items": [
+            {
+                "name": "Extra-shot Espresso",
+                "description": "Add-ons",
+                "price": 7
+            },
+            {
+                "name": "Sweet/Salted Macchiato",
+                "description": "Add-ons"
+            },
+            {
+                "name": "Cream",
+                "description": "Add-ons",
+                "price": 7
+            },
+            {
+                "name": "OatMilk",
+                "description": "Add-ons",
+                "price": 15
+            }
+        ]
+    }
+]

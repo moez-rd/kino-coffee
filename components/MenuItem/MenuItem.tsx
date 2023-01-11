@@ -4,7 +4,7 @@ import Kino from '@/assets/svg/kino.svg';
 interface Props {
   description?: string;
   name: string;
-  price?: string;
+  price?: string | number;
   best?: boolean;
 }
 
